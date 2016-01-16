@@ -1,0 +1,43 @@
+<div ng-controller="projectsCtrl">
+
+<div class="container-fluid">
+  <div class="row projectRow">
+		<div class="col-sm-4" style="background-color:lavender;" ng-repeat="project in projects" ng-click="tileClicked($index)">
+			<a href="#">
+			<div class="panel panel-default ">
+				<div class="panel-heading">
+					<h3 class="panel-title">{{project.title}}</h3>
+				</div>
+			  <div class="panel-body projectTile" ng-bind-html="project.desc">
+					
+			  </div>
+			</div>
+			</a>
+		</div>
+		
+		<!-- Modal -->
+		<div id="myModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">{{activeProject.title}}</h4>
+				</div>
+				<div class="modal-body" ng-bind-html="activeProject.desc">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		  </div>
+		</div>
+		
+		<div class="col-sm-4" style="background-color:lavenderblush;"></div>
+		<div class="col-sm-4" style="background-color:lavender;"></div>
+  </div>
+</div>
+
+</div>

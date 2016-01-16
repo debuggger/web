@@ -1,0 +1,33 @@
+
+.logo{
+
+    height: 3vw;
+
+}
+
+.resume{
+	position: relative;
+}
+
+.homePage{
+	background-image: url(bg.png)
+}
+
+.projectRow{
+	position: relative;
+	margin-top: 60px;
+}
+
+.contactRow{
+	position: relative;
+	margin-top: 40vh;
+}
+
+.projectTile {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 1; /* number of lines to show */
+
+}
